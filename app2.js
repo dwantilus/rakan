@@ -73,25 +73,25 @@ function addError(text) {
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
-  var GoogleAuth;
-  var SCOPE = 'https://www.googleapis.com/auth/dialogflow';
-
-  gapi.load('client:auth2', function() {
-    gapi.client.init({
-      'apiKey': '0a8eb74242c143b89ea7495f5f73f062',
-      'clientId': '935404433291-vbbjib61ue1qt6kuqqq00b7fndddlals.apps.googleusercontent.com',
-      'scope': SCOPE
-    }).then(function() {
-      GoogleAuth = gapi.auth2.getAuthInstance();
-      // Listen for sign-in state changes.
-      GoogleAuth.isSignedIn.listen(updateSigninStatus);
-
-      // Handle initial sign-in state. (Determine if user is already signed in.)
-      var user = GoogleAuth.currentUser.get();
-      setSigninStatus();
-
-    });
-  });
+  // var GoogleAuth;
+  // var SCOPE = 'https://www.googleapis.com/auth/dialogflow';
+  //
+  // gapi.load('client:auth2', function() {
+  //   gapi.client.init({
+  //     'apiKey': '0a8eb74242c143b89ea7495f5f73f062',
+  //     'clientId': '935404433291-vbbjib61ue1qt6kuqqq00b7fndddlals.apps.googleusercontent.com',
+  //     'scope': SCOPE
+  //   }).then(function() {
+  //     GoogleAuth = gapi.auth2.getAuthInstance();
+  //     // Listen for sign-in state changes.
+  //     GoogleAuth.isSignedIn.listen(updateSigninStatus);
+  //
+  //     // Handle initial sign-in state. (Determine if user is already signed in.)
+  //     var user = GoogleAuth.currentUser.get();
+  //     setSigninStatus();
+  //
+  //   });
+  // });
 
   // test for relevant API-s
   // for (let api of ['speechSynthesis', 'webkitSpeechSynthesis', 'speechRecognition', 'webkitSpeechRecognition']) {
