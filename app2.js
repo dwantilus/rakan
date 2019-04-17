@@ -73,8 +73,8 @@ function addError(text) {
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
-  // var GoogleAuth;
-  // var SCOPE = 'https://www.googleapis.com/auth/dialogflow';
+  var GoogleAuth;
+  var SCOPE = 'https://www.googleapis.com/auth/dialogflow';
   //
   // gapi.load('client:auth2', function() {
   //   gapi.client.init({
